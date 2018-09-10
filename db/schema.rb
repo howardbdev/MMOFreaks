@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -19,15 +20,15 @@ ActiveRecord::Schema.define(version: 20180215184508) do
 
   create_table "builds", force: :cascade do |t|
     t.integer "user_id"
-    t.string "name"
+    t.string  "name"
     t.integer "klass_id"
     t.integer "race_id"
-    t.string "description"
+    t.string  "description"
     t.integer "karacter_id"
   end
 
   create_table "comments", force: :cascade do |t|
-    t.string "content"
+    t.string  "content"
     t.integer "user_id"
     t.integer "build_id"
   end
